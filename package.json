@@ -1,9 +1,9 @@
 {
   "name": "digitaliss",
   "displayName": "digitaliss",
-  "description": "Dark colour theme for VS Code",
+  "description": "Dark theme for VS Code inspired by monokai and dracula.",
   "publisher": "dgtlss",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "icon": "icon.png",
   "repository": {
     "type": "git",
