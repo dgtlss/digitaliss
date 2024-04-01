@@ -1,16 +1,40 @@
-# digitaliss README
+# digitaliss
 
-## Working with Markdown
+[Theme Name] is a dark theme for Visual Studio Code, inspired by [theme inspiration]. It's designed to be easy on the eyes while maintaining readability and improving productivity. Whether you're coding for hours or briefly reviewing code, [Theme Name] provides a comfortable and engaging visual experience.
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+![Preview](link-to-image)
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+## Installation
 
-## For more information
+1. Open **Extensions** sidebar panel in Visual Studio Code. `View → Extensions`
+2. Search for `digitaliss`
+3. Click **Install**
+4. Navigate to `File > Preferences > Color Theme > digitaliss` (or `Code > Preferences > Color Theme > digitaliss` on macOS) to activate it.
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+## Customization
 
-**Enjoy!**
+VSCode allows you to customize any theme. To adjust the digitaliss theme to your taste:
+
+1. Go to `File > Preferences > Settings` (or `Code > Preferences > Settings` on macOS).
+2. Select `Workbench > Appearance` and click on `Color Customizations`.
+3. Click on `{}` on the top right to edit the settings.json file and override the [Theme Name] colors.
+
+Refer to the [VSCode Theme Color Reference](https://code.visualstudio.com/api/references/theme-color) for more details.
+
+## Contributing
+
+Contributions to digitaliss are always welcome, whether it be improvements to the theme, bug reports, or feature requests. Feel free to fork the repository and submit a pull request with your changes!
+
+## License
+
+digitaliss is available under the [MIT License](LICENSE).
+
+## Credits
+
+- digitaliss was designed and developed by [Nathan Langer](https://github.com/dgtlss).
+- Inspired by Monokai & Dracula themes.
+
+---
+
+Enjoy coding with digitaliss! If you like it, consider rating it on the [Visual Studio Code Marketplace](link-to-marketplace).
+
