@@ -6,7 +6,7 @@
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "dgtlss/digitaliss"
+    "url": "https://github.com/dgtlss/digitaliss"
   },
   "engines": {
     "vscode": "^1.87.0"

@@ -25,10 +25,6 @@ Refer to the [VSCode Theme Color Reference](https://code.visualstudio.com/api/re
 
 Contributions to digitaliss are always welcome, whether it be improvements to the theme, bug reports, or feature requests. Feel free to fork the repository and submit a pull request with your changes!
 
-## License
-
-digitaliss is available under the [MIT License](LICENSE).
-
 ## Credits
 
 - digitaliss was designed and developed by [Nathan Langer](https://github.com/dgtlss).
