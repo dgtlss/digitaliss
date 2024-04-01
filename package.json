@@ -1,0 +1,22 @@
+{
+  "name": "digitaliss",
+  "displayName": "digitaliss",
+  "description": "Dark colour theme for VS Code",
+  "publisher": "Nathan Langer",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "digitaliss",
+        "uiTheme": "vs-dark",
+        "path": "./themes/digitaliss-color-theme.json"
+      }
+    ]
+  }
+}
