@@ -2,7 +2,7 @@
 
 digitaliss is a dark theme for Visual Studio Code, inspired by [theme inspiration]. It's designed to be easy on the eyes while maintaining readability and improving productivity. Whether you're coding for hours or briefly reviewing code, digitaliss provides a comfortable and engaging visual experience.
 
-![digitaliss JS Example](images/jsexample.png)
+![digitaliss JS Example](https://github.com/dgtlss/digitaliss/blob/main/images/jsexample.png?raw=true)
 
 ## Installation
 

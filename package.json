@@ -4,6 +4,10 @@
   "description": "Dark colour theme for VS Code",
   "publisher": "Nathan Langer",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "dgtlss/digitaliss"
+  },
   "engines": {
     "vscode": "^1.87.0"
   },
