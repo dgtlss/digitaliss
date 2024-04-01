@@ -2,8 +2,8 @@
   "name": "digitaliss",
   "displayName": "digitaliss",
   "description": "Dark colour theme for VS Code",
-  "publisher": "Nathan Langer",
-  "version": "0.0.1",
+  "publisher": "dgtlss",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/dgtlss/digitaliss"
