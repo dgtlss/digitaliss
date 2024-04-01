@@ -1,8 +1,8 @@
 # digitaliss
 
-[Theme Name] is a dark theme for Visual Studio Code, inspired by [theme inspiration]. It's designed to be easy on the eyes while maintaining readability and improving productivity. Whether you're coding for hours or briefly reviewing code, [Theme Name] provides a comfortable and engaging visual experience.
+digitaliss is a dark theme for Visual Studio Code, inspired by [theme inspiration]. It's designed to be easy on the eyes while maintaining readability and improving productivity. Whether you're coding for hours or briefly reviewing code, digitaliss provides a comfortable and engaging visual experience.
 
-![Preview](link-to-image)
+![digitaliss JS Example](images/jsexample.png)
 
 ## Installation
 
@@ -17,7 +17,7 @@ VSCode allows you to customize any theme. To adjust the digitaliss theme to your
 
 1. Go to `File > Preferences > Settings` (or `Code > Preferences > Settings` on macOS).
 2. Select `Workbench > Appearance` and click on `Color Customizations`.
-3. Click on `{}` on the top right to edit the settings.json file and override the [Theme Name] colors.
+3. Click on `{}` on the top right to edit the settings.json file and override the digitaliss colors.
 
 Refer to the [VSCode Theme Color Reference](https://code.visualstudio.com/api/references/theme-color) for more details.
 
