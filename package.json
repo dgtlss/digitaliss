@@ -3,7 +3,8 @@
   "displayName": "digitaliss",
   "description": "Dark colour theme for VS Code",
   "publisher": "dgtlss",
-  "version": "0.0.2",
+  "version": "1.0.0",
+  "icon": "icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/dgtlss/digitaliss"
