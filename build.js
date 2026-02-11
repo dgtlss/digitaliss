@@ -482,112 +482,101 @@ function buildTokenColors(p, italic) {
     // ============================================================
     // MARKUP / MARKDOWN
     // ============================================================
+
+    // Heading levels — each gets a distinct color for visual hierarchy
     {
-      name: "Headings",
-      scope: "markup.heading",
-      settings: { foreground: p.fg },
-    },
-    {
-      name: "Heading punctuation",
+      name: "Heading 1",
       scope:
-        "markup.heading punctuation.definition.heading, entity.name.section",
-      settings: { foreground: p.pink },
+        "heading.1.markdown entity.name.section.markdown,markup.heading.1.markdown",
+      settings: { foreground: p.pink, fontStyle: "bold" },
     },
     {
-      name: "Markdown section",
-      scope: "entity.name.section.markdown",
-      settings: { foreground: p.fg },
+      name: "Heading 2",
+      scope:
+        "heading.2.markdown entity.name.section.markdown,markup.heading.2.markdown",
+      settings: { foreground: p.cyan, fontStyle: "bold" },
     },
     {
-      name: "Markdown heading punctuation",
+      name: "Heading 3",
+      scope:
+        "heading.3.markdown entity.name.section.markdown,markup.heading.3.markdown",
+      settings: { foreground: p.lime, fontStyle: "bold" },
+    },
+    {
+      name: "Heading 4",
+      scope:
+        "heading.4.markdown entity.name.section.markdown,markup.heading.4.markdown",
+      settings: { foreground: p.purple, fontStyle: "bold" },
+    },
+    {
+      name: "Heading 5",
+      scope:
+        "heading.5.markdown entity.name.section.markdown,markup.heading.5.markdown",
+      settings: { foreground: p.yellow, fontStyle: "bold" },
+    },
+    {
+      name: "Heading 6",
+      scope:
+        "heading.6.markdown entity.name.section.markdown,markup.heading.6.markdown",
+      settings: { foreground: p.fg, fontStyle: "bold" },
+    },
+    {
+      name: "Heading fallback",
+      scope: "markup.heading,entity.name.section",
+      settings: { foreground: p.pink, fontStyle: "bold" },
+    },
+    {
+      name: "Heading # punctuation",
       scope: "punctuation.definition.heading.markdown",
-      settings: { foreground: p.fg },
-    },
-    {
-      name: "Markdown list punctuation",
-      scope: "punctuation.definition.list.begin.markdown",
-      settings: { foreground: p.fg },
+      settings: { foreground: p.comment },
     },
     {
       name: "Markdown heading setext",
-      scope: "markup.heading.setext",
-      settings: { foreground: p.fgMuted },
-    },
-    {
-      name: "Markdown setext headings",
       scope:
-        "markup.heading.setext.1.markdown,markup.heading.setext.2.markdown",
-      settings: { foreground: p.fg },
+        "markup.heading.setext,markup.heading.setext.1.markdown,markup.heading.setext.2.markdown",
+      settings: { foreground: p.pink, fontStyle: "bold" },
     },
+
+    // Bold & Italic
     {
       name: "Bold",
       scope: "markup.bold,todo.bold",
-      settings: { foreground: p.purple },
+      settings: { foreground: p.purple, fontStyle: "bold" },
     },
     {
       name: "Bold punctuation",
-      scope: "punctuation.definition.bold",
-      settings: { foreground: p.lime },
-    },
-    {
-      name: "Markdown bold punctuation",
-      scope: "punctuation.definition.bold.markdown",
-      settings: { foreground: p.purple },
+      scope:
+        "punctuation.definition.bold,punctuation.definition.bold.markdown",
+      settings: { foreground: p.comment },
     },
     {
       name: "Markup italic",
-      scope: "markup.italic, punctuation.definition.italic,todo.emphasis",
-      settings: { foreground: p.pink },
+      scope: "markup.italic,markup.italic.markdown,punctuation.definition.italic,todo.emphasis",
+      settings: { foreground: p.pink, fontStyle: "italic" },
     },
     {
-      name: "Markup italic markdown",
-      scope: "markup.italic.markdown",
-      settings: { fontStyle: "italic" },
+      name: "Bold italic",
+      scope: "markup.bold markup.italic,markup.italic markup.bold",
+      settings: { foreground: p.purple, fontStyle: "bold italic" },
     },
     {
-      name: "Markdown inline raw",
-      scope: "markup.inline.raw.markdown",
+      name: "Strikethrough",
+      scope:
+        "markup.strikethrough,markup.strikethrough.markdown,punctuation.definition.strikethrough.markdown",
+      settings: { foreground: p.comment },
+    },
+
+    // Inline code & code blocks
+    {
+      name: "Markdown inline code",
+      scope:
+        "markup.inline.raw.markdown,markup.inline.raw.string.markdown",
       settings: { foreground: p.yellow },
     },
     {
-      name: "Markdown inline raw string",
-      scope: "markup.inline.raw.string.markdown",
-      settings: { foreground: p.yellow },
-    },
-    {
-      name: "Markdown list punctuation definition",
-      scope: "punctuation.definition.list.markdown",
-      settings: { foreground: p.fg },
-    },
-    {
-      name: "Markdown punctuation definition string",
-      scope: [
-        "punctuation.definition.string.begin.markdown",
-        "punctuation.definition.string.end.markdown",
-        "punctuation.definition.metadata.markdown",
-      ],
-      settings: { foreground: p.fg },
-    },
-    {
-      name: "Markdown beginning list punctuation",
-      scope: "beginning.punctuation.definition.list.markdown",
-      settings: { foreground: p.fg },
-    },
-    {
-      name: "Markdown link",
+      name: "Inline code backtick punctuation",
       scope:
-        "markup.underline.link.markdown,markup.underline.link.image.markdown",
-      settings: { foreground: p.pink },
-    },
-    {
-      name: "Markdown link title/description",
-      scope:
-        "string.other.link.title.markdown,string.other.link.description.markdown",
-      settings: { foreground: p.pink },
-    },
-    {
-      name: "Markdown quote",
-      scope: "markup.quote.markdown",
+        "punctuation.definition.raw.markdown",
       settings: { foreground: p.comment },
     },
     {
@@ -597,9 +586,79 @@ function buildTokenColors(p, italic) {
       settings: { foreground: p.yellow },
     },
     {
-      name: "Markdown fenced code language",
-      scope: "fenced_code.block.language.markdown",
+      name: "Fenced code block delimiters",
+      scope: "punctuation.definition.fenced.markdown,markup.fenced_code.block.markdown punctuation.definition.markdown",
+      settings: { foreground: p.comment },
+    },
+    {
+      name: "Fenced code language identifier",
+      scope: "fenced_code.block.language.markdown,fenced_code.block.language",
+      settings: { foreground: p.cyan, fontStyle: "italic" },
+    },
+
+    // Lists
+    {
+      name: "Markdown list bullets/numbers",
+      scope:
+        "punctuation.definition.list.begin.markdown,punctuation.definition.list.markdown,beginning.punctuation.definition.list.markdown",
       settings: { foreground: p.cyan },
+    },
+
+    // Links
+    {
+      name: "Markdown link text",
+      scope:
+        "string.other.link.title.markdown,string.other.link.description.markdown",
+      settings: { foreground: p.lime },
+    },
+    {
+      name: "Markdown link URL",
+      scope:
+        "markup.underline.link.markdown,markup.underline.link.image.markdown",
+      settings: { foreground: p.cyan, fontStyle: "underline" },
+    },
+    {
+      name: "Markdown link brackets/parens",
+      scope:
+        "punctuation.definition.string.begin.markdown,punctuation.definition.string.end.markdown,punctuation.definition.metadata.markdown",
+      settings: { foreground: p.comment },
+    },
+    {
+      name: "Markdown image !",
+      scope: "punctuation.definition.link.description.begin.markdown",
+      settings: { foreground: p.purple },
+    },
+
+    // Blockquotes
+    {
+      name: "Markdown blockquote",
+      scope: "markup.quote.markdown",
+      settings: { foreground: p.comment, fontStyle: "italic" },
+    },
+    {
+      name: "Markdown blockquote punctuation",
+      scope: "punctuation.definition.quote.begin.markdown",
+      settings: { foreground: p.cyan },
+    },
+
+    // Horizontal rule
+    {
+      name: "Markdown separator/thematic break",
+      scope: "meta.separator.markdown",
+      settings: { foreground: p.comment },
+    },
+
+    // Tables
+    {
+      name: "Markdown table",
+      scope: "markup.table.markdown",
+      settings: { foreground: p.fg },
+    },
+    {
+      name: "Markdown table separator",
+      scope:
+        "punctuation.separator.table.markdown,punctuation.definition.table.markdown",
+      settings: { foreground: p.comment },
     },
 
     // ============================================================

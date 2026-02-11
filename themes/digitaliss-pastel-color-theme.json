@@ -624,145 +624,124 @@
       }
     },
     {
-      "name": "Headings",
-      "scope": "markup.heading",
+      "name": "Heading 1",
+      "scope": "heading.1.markdown entity.name.section.markdown,markup.heading.1.markdown",
       "settings": {
-        "foreground": "#d8d6ce"
+        "foreground": "#e88a9f",
+        "fontStyle": "bold"
       }
     },
     {
-      "name": "Heading punctuation",
-      "scope": "markup.heading punctuation.definition.heading, entity.name.section",
+      "name": "Heading 2",
+      "scope": "heading.2.markdown entity.name.section.markdown,markup.heading.2.markdown",
       "settings": {
-        "foreground": "#e88a9f"
+        "foreground": "#7ec8d4",
+        "fontStyle": "bold"
       }
     },
     {
-      "name": "Markdown section",
-      "scope": "entity.name.section.markdown",
+      "name": "Heading 3",
+      "scope": "heading.3.markdown entity.name.section.markdown,markup.heading.3.markdown",
       "settings": {
-        "foreground": "#d8d6ce"
+        "foreground": "#a8d98a",
+        "fontStyle": "bold"
       }
     },
     {
-      "name": "Markdown heading punctuation",
+      "name": "Heading 4",
+      "scope": "heading.4.markdown entity.name.section.markdown,markup.heading.4.markdown",
+      "settings": {
+        "foreground": "#b9a4e0",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Heading 5",
+      "scope": "heading.5.markdown entity.name.section.markdown,markup.heading.5.markdown",
+      "settings": {
+        "foreground": "#e8d4a0",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Heading 6",
+      "scope": "heading.6.markdown entity.name.section.markdown,markup.heading.6.markdown",
+      "settings": {
+        "foreground": "#d8d6ce",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Heading fallback",
+      "scope": "markup.heading,entity.name.section",
+      "settings": {
+        "foreground": "#e88a9f",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Heading # punctuation",
       "scope": "punctuation.definition.heading.markdown",
       "settings": {
-        "foreground": "#d8d6ce"
-      }
-    },
-    {
-      "name": "Markdown list punctuation",
-      "scope": "punctuation.definition.list.begin.markdown",
-      "settings": {
-        "foreground": "#d8d6ce"
+        "foreground": "#7a7b9e99"
       }
     },
     {
       "name": "Markdown heading setext",
-      "scope": "markup.heading.setext",
+      "scope": "markup.heading.setext,markup.heading.setext.1.markdown,markup.heading.setext.2.markdown",
       "settings": {
-        "foreground": "#d4d4d4"
-      }
-    },
-    {
-      "name": "Markdown setext headings",
-      "scope": "markup.heading.setext.1.markdown,markup.heading.setext.2.markdown",
-      "settings": {
-        "foreground": "#d8d6ce"
+        "foreground": "#e88a9f",
+        "fontStyle": "bold"
       }
     },
     {
       "name": "Bold",
       "scope": "markup.bold,todo.bold",
       "settings": {
-        "foreground": "#b9a4e0"
+        "foreground": "#b9a4e0",
+        "fontStyle": "bold"
       }
     },
     {
       "name": "Bold punctuation",
-      "scope": "punctuation.definition.bold",
+      "scope": "punctuation.definition.bold,punctuation.definition.bold.markdown",
       "settings": {
-        "foreground": "#a8d98a"
-      }
-    },
-    {
-      "name": "Markdown bold punctuation",
-      "scope": "punctuation.definition.bold.markdown",
-      "settings": {
-        "foreground": "#b9a4e0"
+        "foreground": "#7a7b9e99"
       }
     },
     {
       "name": "Markup italic",
-      "scope": "markup.italic, punctuation.definition.italic,todo.emphasis",
+      "scope": "markup.italic,markup.italic.markdown,punctuation.definition.italic,todo.emphasis",
       "settings": {
-        "foreground": "#e88a9f"
-      }
-    },
-    {
-      "name": "Markup italic markdown",
-      "scope": "markup.italic.markdown",
-      "settings": {
+        "foreground": "#e88a9f",
         "fontStyle": "italic"
       }
     },
     {
-      "name": "Markdown inline raw",
-      "scope": "markup.inline.raw.markdown",
+      "name": "Bold italic",
+      "scope": "markup.bold markup.italic,markup.italic markup.bold",
+      "settings": {
+        "foreground": "#b9a4e0",
+        "fontStyle": "bold italic"
+      }
+    },
+    {
+      "name": "Strikethrough",
+      "scope": "markup.strikethrough,markup.strikethrough.markdown,punctuation.definition.strikethrough.markdown",
+      "settings": {
+        "foreground": "#7a7b9e99"
+      }
+    },
+    {
+      "name": "Markdown inline code",
+      "scope": "markup.inline.raw.markdown,markup.inline.raw.string.markdown",
       "settings": {
         "foreground": "#e8d4a0"
       }
     },
     {
-      "name": "Markdown inline raw string",
-      "scope": "markup.inline.raw.string.markdown",
-      "settings": {
-        "foreground": "#e8d4a0"
-      }
-    },
-    {
-      "name": "Markdown list punctuation definition",
-      "scope": "punctuation.definition.list.markdown",
-      "settings": {
-        "foreground": "#d8d6ce"
-      }
-    },
-    {
-      "name": "Markdown punctuation definition string",
-      "scope": [
-        "punctuation.definition.string.begin.markdown",
-        "punctuation.definition.string.end.markdown",
-        "punctuation.definition.metadata.markdown"
-      ],
-      "settings": {
-        "foreground": "#d8d6ce"
-      }
-    },
-    {
-      "name": "Markdown beginning list punctuation",
-      "scope": "beginning.punctuation.definition.list.markdown",
-      "settings": {
-        "foreground": "#d8d6ce"
-      }
-    },
-    {
-      "name": "Markdown link",
-      "scope": "markup.underline.link.markdown,markup.underline.link.image.markdown",
-      "settings": {
-        "foreground": "#e88a9f"
-      }
-    },
-    {
-      "name": "Markdown link title/description",
-      "scope": "string.other.link.title.markdown,string.other.link.description.markdown",
-      "settings": {
-        "foreground": "#e88a9f"
-      }
-    },
-    {
-      "name": "Markdown quote",
-      "scope": "markup.quote.markdown",
+      "name": "Inline code backtick punctuation",
+      "scope": "punctuation.definition.raw.markdown",
       "settings": {
         "foreground": "#7a7b9e99"
       }
@@ -775,10 +754,90 @@
       }
     },
     {
-      "name": "Markdown fenced code language",
-      "scope": "fenced_code.block.language.markdown",
+      "name": "Fenced code block delimiters",
+      "scope": "punctuation.definition.fenced.markdown,markup.fenced_code.block.markdown punctuation.definition.markdown",
+      "settings": {
+        "foreground": "#7a7b9e99"
+      }
+    },
+    {
+      "name": "Fenced code language identifier",
+      "scope": "fenced_code.block.language.markdown,fenced_code.block.language",
+      "settings": {
+        "foreground": "#7ec8d4",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Markdown list bullets/numbers",
+      "scope": "punctuation.definition.list.begin.markdown,punctuation.definition.list.markdown,beginning.punctuation.definition.list.markdown",
       "settings": {
         "foreground": "#7ec8d4"
+      }
+    },
+    {
+      "name": "Markdown link text",
+      "scope": "string.other.link.title.markdown,string.other.link.description.markdown",
+      "settings": {
+        "foreground": "#a8d98a"
+      }
+    },
+    {
+      "name": "Markdown link URL",
+      "scope": "markup.underline.link.markdown,markup.underline.link.image.markdown",
+      "settings": {
+        "foreground": "#7ec8d4",
+        "fontStyle": "underline"
+      }
+    },
+    {
+      "name": "Markdown link brackets/parens",
+      "scope": "punctuation.definition.string.begin.markdown,punctuation.definition.string.end.markdown,punctuation.definition.metadata.markdown",
+      "settings": {
+        "foreground": "#7a7b9e99"
+      }
+    },
+    {
+      "name": "Markdown image !",
+      "scope": "punctuation.definition.link.description.begin.markdown",
+      "settings": {
+        "foreground": "#b9a4e0"
+      }
+    },
+    {
+      "name": "Markdown blockquote",
+      "scope": "markup.quote.markdown",
+      "settings": {
+        "foreground": "#7a7b9e99",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Markdown blockquote punctuation",
+      "scope": "punctuation.definition.quote.begin.markdown",
+      "settings": {
+        "foreground": "#7ec8d4"
+      }
+    },
+    {
+      "name": "Markdown separator/thematic break",
+      "scope": "meta.separator.markdown",
+      "settings": {
+        "foreground": "#7a7b9e99"
+      }
+    },
+    {
+      "name": "Markdown table",
+      "scope": "markup.table.markdown",
+      "settings": {
+        "foreground": "#d8d6ce"
+      }
+    },
+    {
+      "name": "Markdown table separator",
+      "scope": "punctuation.separator.table.markdown,punctuation.definition.table.markdown",
+      "settings": {
+        "foreground": "#7a7b9e99"
       }
     },
     {

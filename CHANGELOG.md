@@ -2,6 +2,22 @@
 
 All notable changes to the "digitaliss" extension will be documented in this file.
 
+## [2.0.2] - 2026-02-11
+
+### Improved
+
+- **Markdown highlighting overhaul** — `.md` files are now much easier to read:
+  - Each heading level (H1–H6) has a distinct color: pink, cyan, lime, purple, yellow, default
+  - All headings render bold
+  - Bold text uses `fontStyle: bold`, italic uses `fontStyle: italic`, bold italic combines both
+  - Strikethrough dimmed to comment color
+  - List bullets/numbers highlighted in cyan
+  - Link text in lime, link URLs in cyan with underline
+  - Link brackets/parens, backticks, and fence delimiters dimmed to comment color
+  - Blockquotes render italic with a cyan `>` marker
+  - Fenced code language identifier (e.g. ` ```js `) in cyan italic
+  - Table separators and horizontal rules dimmed to comment color
+
 ## [2.0.1] - 2026-02-11
 
 ### Added
