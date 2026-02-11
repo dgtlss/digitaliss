@@ -1,9 +1,9 @@
 {
   "name": "digitaliss",
   "displayName": "digitaliss",
-  "description": "Dark theme for VS Code inspired by monokai and dracula.",
+  "description": "A vibrant theme suite for VS Code / Cursor — Dark, Pastel, and Light variants with optional italic styling.",
   "publisher": "dgtlss",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "icon": "icon.png",
   "repository": {
     "type": "git",
@@ -15,12 +15,40 @@
   "categories": [
     "Themes"
   ],
+  "scripts": {
+    "build": "node build.js"
+  },
   "contributes": {
     "themes": [
       {
         "label": "digitaliss",
         "uiTheme": "vs-dark",
         "path": "./themes/digitaliss-color-theme.json"
+      },
+      {
+        "label": "digitaliss Italic",
+        "uiTheme": "vs-dark",
+        "path": "./themes/digitaliss-italic-color-theme.json"
+      },
+      {
+        "label": "digitaliss Pastel",
+        "uiTheme": "vs-dark",
+        "path": "./themes/digitaliss-pastel-color-theme.json"
+      },
+      {
+        "label": "digitaliss Pastel Italic",
+        "uiTheme": "vs-dark",
+        "path": "./themes/digitaliss-pastel-italic-color-theme.json"
+      },
+      {
+        "label": "digitaliss Light",
+        "uiTheme": "vs",
+        "path": "./themes/digitaliss-light-color-theme.json"
+      },
+      {
+        "label": "digitaliss Light Italic",
+        "uiTheme": "vs",
+        "path": "./themes/digitaliss-light-italic-color-theme.json"
       }
     ]
   }
